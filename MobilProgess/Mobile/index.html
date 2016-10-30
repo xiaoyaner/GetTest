@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="fa/css/font-awesome.css" />
+	<link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+	<link rel="stylesheet" href="css/progress.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/home.css" />
+	<link rel="stylesheet" href="css/citylist.css" />
+	<link rel="stylesheet" href="css/foodlist.css" />
+	
+	
+</head>
+<body>
+	<div class="homeWrap" id="home" style="display: none;">
+		<div class="home-top">
+			<a href="javascript:;" class="logo">ele.me</a>
+			<a href="javascript:;" class="login">登录 | 注册</a>
+		</div>
+		<div class="home-tip">
+			<p class="home-address">饿了么猜你在：<span>朝阳门外大街(近北京火车站)</span></p>
+		</div>
+		<div class="home-guess">
+			<h4 class="home-guessTop">
+				 当前定位城市:
+				 <span>定位不准时，请在城市列表中选择</span>
+			</h4>
+			<a class="home-guessP" href="#citylist-1-%E4%B8%8A%E6%B5%B7">
+				<b>上海</b>
+				<i class="fa fa-angle-right"></i> 
+			</a>
+		</div>
+		<div class="home-hot">
+			<h2>热门城市</h2>
+			<div class="home_hotcity">	
+				<!-- <a href="#">上海</a> -->
+			</div>
+		</div>
+
+		<div class="home_citygroups">
+		   <!--<div class="home_citygroup">
+		   		  <h2>A<span>(按字母排序)</span></h2>
+		   		 
+		   		  <a class="home_citygroup-div" href="#">安庆</a>	   		
+		   	</div>	 -->	
+		</div>
+	</div>
+	<div class="citylistWrap" id="citylist" style="display: none;">
+		<div class="section_nav">
+			<a href="javascript:;">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a href="#home" id="cityname">上海</a>
+			<a href="#home" class="cityChange">切换城市</a>
+		</div>
+		<div class="section_top">
+			饿了么猜你在：<span>朝阳门外大街(附近北京火车站)</span>
+		</div>
+		<div class="search">
+			<form action="#" class="form">
+			    <input type="hidden" name="city_id" value='1' />
+			    <input type="hidden" name="type" value='search' />
+				<input class="word" type="text" name="keyword" placeholder="输入学校、商务楼、地址"/>
+				<button id="search_address">搜索</button>
+			</form>
+		</div>
+		<ul class="search_result">
+			
+		</ul>
+	</div>
+	<div class="flistWrap" id="foodlist" style="display: none;">
+		<div class="foodHead">
+			<a href="#">
+				<i class="fa fa-search"></i>
+			</a>
+			<a href="#home" class="food_address"></a>
+			<a href="#">登录</a>
+		</div>
+		<div class="kong"></div>
+		<div class="swiper-container food_swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide1"></div>
+				<div class="swiper-slide slide2"></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+         <h2 class="food_h2">
+         	<span>
+         		<i class="fa  fa-university"></i>
+         	</span>
+         	<span>附近商家</span>
+         </h2>
+		<ul class="foodft">
+			<li class="footft_li">
+			 <!--  <a href="#detail">
+				    <div class="footft_pic">
+				   	  <img src="//fuss10.elemecdn.com/c/b5/ab881b81df68c2e3253a457e652f8jpeg.jpeg?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/" alt="" />
+				    </div>
+	                <div class="footft_right">
+	                	<p class="foot_p1">
+	                		<b>一起饮炊吧</b>
+	                		<span>保</span>
+	                	</p>
+	                	<p class="foot_p2">
+	                		<span>
+	                			3.7
+	                		</span>
+	                		<span>
+	                			月售64单
+	                		</span>
+	                		<span>蜂鸟转送</span>
+	                		<span>准时达</span>
+	                	</p>
+	                	<p class="foot_p3"> 
+	                		<span>￥15起送</span>
+	                		<span>/</span>
+	                		<span>配送费2元</span>
+	                		<b>2.68km</b>
+	                		<i>/39分钟</i>
+	                	</p>
+	                </div>
+               </a> -->
+			</li>
+		</ul>
+	</div>
+    <div class="fdetail" id="detail" style="display: none;">sfsd</div>
+	<script>
+		
+	</script>
+
+
+	<script src="plus/rem.js"></script>
+	<script src="plus/zepto.js"></script>
+	<script src="plus/director.js"></script>
+	<script src="plus/fastclick.js"></script>
+	<!-- <script src="plus/pace.js"></script> -->
+	<script src="plus/swiper-3.3.1.jquery.min.js"></script>
+	
+	<script src="js/home.js"></script>
+	<script src="js/citylist.js"></script>
+	<script src="js/foodlist.js"></script>
+	<script src="js/detail.js"></script>
+	<script src="route.js"></script>
+	<script src="index.js"></script>
+	<script>
+	     
+	    
+		
+		 function store(nameSpace,data){
+			if(data) {
+				//存数据操作
+				return localStorage.setItem(nameSpace, JSON.stringify(data));
+			}
+			//取数据操作而且做了安全方面校验
+			return (nameSpace && JSON.parse(localStorage.getItem(nameSpace))) || null;
+		}
+
+		 var mySwiper = Swiper('.swiper-container',{
+	     	 direction:'horizontal',
+	     	 loop:true,
+	     	 pagination:'.swiper-pagination'
+	     })
+	</script>
+
+	
+
+</body>
+</html>
